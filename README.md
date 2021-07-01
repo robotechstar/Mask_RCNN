@@ -1,3 +1,21 @@
+# Install
+1. Install dependencies
+   ```bash
+   # install coco
+    git clone https://github.com/pdollar/coco.git
+
+    cd coco/PythonAPI
+    make
+    sudo make install
+    sudo python setup.py install
+    # mask-rcnn depens
+    pip3 install -r requirements.txt
+   ```
+3. Run setup from the repository root directory
+    ```bash
+    python3 setup.py install
+    ``` 
+
 # Mask R-CNN for Object Detection and Segmentation
 
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
